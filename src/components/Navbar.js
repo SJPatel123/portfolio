@@ -9,10 +9,6 @@ export default function Navbar() {
                 <div className="mylogo">
                     <p>Snej Hirpara</p>
                 </div>
-                <input type="checkbox" id="nav-toggle" className="nav-toggle" />
-                <label htmlFor="nav-toggle" className="nav-toggle-label">
-                    <span></span>
-                </label>
                 <div className="nav-items">
                     <ul className="items">
                         <li className="active" style={{ "--i": "1" }}>Home</li>
