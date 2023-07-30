@@ -1,8 +1,152 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
 }
 
-.App-logo {
+.skill-set{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  margin-top: 15px;
+  min-height: calc(100vh - 50px - 100px);
+  padding: 10px 0px;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+}
+
+.skill-table{
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.skill-table td{
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes slideLeft {
+  0%{
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.my-intro{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70vh; */
+  /* border: 1px solid black; */
+}
+
+.my-skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 30vh;
+  /* border: 1px solid black; */
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.title p{
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideRight {
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.project-info{
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  /* border: 1px solid black; */
+  margin-top: 40px;
+}
+
+.main-project-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.main-project-title p{
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.projects{
+  display: flex;
+  padding: 0 150px;
+  margin-top: 18px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.contact-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideRight 2s ease forwards;
+  animation-delay: 1s;
+}
+
+.testimonials{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  border: 1px solid black;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +179,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
